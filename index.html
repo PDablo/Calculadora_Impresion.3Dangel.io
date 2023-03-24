@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Impresion</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <section class="insumos" id="insumos">
+            <div class="consumo">
+                <h2>Calculo consumo de impresora</h2>
+                <input type="number" placeholder="Corriente impresora [A]" id="corriente">
+                <input type="number" placeholder="Tension impresora [V]" id="tension">
+                <button onclick="calcularConsumo()">Calcular consumo</button>
+            </div>
+            <div class="costo_material">
+                <h2>Calculo costo gramo de filamento</h2>
+                <input type="text" placeholder="Precio filamento" id="precioFilamento">
+                <input type="text" placeholder="Peso bobina (g)" id="pesoBobina">
+                <button onclick="calcularMaterial()">Costo material</button>
+            </div>
+            <div class="costo" id="costo">
+                <h2>Costo de impresion</h2>
+                <input type="text" placeholder="Horas" id="horas">
+                <input type="text" placeholder="Minutos" id="minutos">
+                <input type="text" placeholder="Peso" id="pesoPieza">
+                <button onclick="calcularCosto()">Calcular costo</button>
+            </div>
+        </section>
+    </header>
+    <script src="functions.js"></script>
+</body>
+</html>

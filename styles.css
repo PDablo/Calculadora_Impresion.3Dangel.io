@@ -1,0 +1,57 @@
+/*Mio
+.insumos{
+    display: flex;
+    background-color: #1e2326;
+    padding: 100px 100px;
+}
+*/
+/* Establece que el contenedor "insumos" utilizará Flexbox para distribuir los elementos dentro de él */
+.insumos {
+    display: flex;
+    /* Permite que los elementos dentro del contenedor "insumos" se distribuyan en varias filas si no caben en una sola */
+    flex-wrap: wrap;
+    /* Alinea los elementos dentro del contenedor "insumos" a los extremos del mismo en el eje horizontal */
+    justify-content: space-between;
+    /* Centra los elementos dentro del contenedor "insumos" en el eje vertical */
+    flex-direction: column;
+    align-items: center;
+    /* Establece el color de fondo del contenedor "insumos" */
+    background-color: #1e2326;
+    /*background-image: url("img/istockphoto-968492388-612x612.jpg");
+    /* esta linea establece el ancho máximo de la imagen en 1100px y el alto se ajusta automáticamente */
+    /*background-size: 1100px auto; */
+    /* Establece un margen de 100px a cada lado del contenedor "insumos" */
+    padding: 5px 100px;
+    /* Establece un ancho máximo de 1100px para el contenedor "insumos" */
+    max-width: 1100px;
+    color: #fff;
+    /* Centra el contenedor "insumos" en la pantalla */
+    margin: auto;
+}
+
+/* Establece que los elementos dentro de "insumos" (consumo, costo_material y costo) tendrán el mismo ancho y estarán alineados entre sí */
+.insumos > div {
+    width: 100%;
+    text-align: center;
+}
+
+.insumos .consumo, .insumos .costo_material {
+    max-width: 1100px;
+    margin: auto;
+    float: left;
+}
+.insumos .costo{
+    max-width: 1100px;
+    margin: auto;
+    clear: both;
+}
+.insumos input{
+    display: block;
+    width: 50%;
+    padding: 8px;
+    border: none;
+    margin-bottom: 10px;
+    background-color: #252a2e;
+    color: #fff;
+    font-size: 18px;
+}
